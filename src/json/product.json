@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "PRESS BUTTER SAND 焦糖奶油餅",
+      "price": 688,
+      "currency": "NTD",
+      "image": "press_butter_sand.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ROYCE 限定生巧克力",
+      "price": 519,
+      "currency": "NTD",
+      "image": "royce_chocolate.jpg"
+    },
+    {
+      "id": 3,
+      "name": "YOKU MOKU 雪茄蛋捲",
+      "price": 649,
+      "currency": "NTD",
+      "image": "yoku_moku.jpg"
+    },
+    {
+      "id": 4,
+      "name": "MILKYSHOP 奶油餅乾",
+      "price": 688,
+      "currency": "NTD",
+      "image": "milkyshop.jpg"
+    }
+  ]
+  
