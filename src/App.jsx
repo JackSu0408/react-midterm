@@ -1,12 +1,11 @@
-import Home from './pages/Home'
+import Home from './pages/Home';
 
 function App() {
-
   return (
-    <div className="container mx-auto main-layout">
+    <div className="w-full h-full min-h-screen mx-auto main-layout">
       <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

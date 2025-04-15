@@ -1,16 +1,15 @@
-import Header from '../components/Header'
-import ProductList from '../components/ProductList'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import ProductList from '../components/ProductList';
+import Footer from '../components/Footer';
 
 function Home() {
-
   return (
-    <div className="container mx-auto main-layout">
+    <div className="w-full h-full min-h-screen flex flex-col">
       <Header />
       <ProductList />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
