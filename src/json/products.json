@@ -2,6 +2,7 @@
     {
       "id": 1,
       "name": "PRESS BUTTER SAND 奶油餅",
+      "category": "日韓必買",
       "price": 688,
       "currency": "NTD",
       "image": "/images/press_butter_sand.jpg"
@@ -9,6 +10,7 @@
     {
       "id": 2,
       "name": "ROYCE 限定生巧克力",
+      "category": "日韓必買",
       "price": 519,
       "currency": "NTD",
       "image": "/images/royce_chocolate.jpg"
@@ -16,6 +18,7 @@
     {
       "id": 3,
       "name": "YOKU MOKU 雪茄蛋捲",
+      "category": "日韓必買",
       "price": 649,
       "currency": "NTD",
       "image": "/images/yoku_moku.png"
@@ -23,6 +26,7 @@
     {
       "id": 4,
       "name": "MILKYSHOP 奶油餅乾",
+      "category": "日韓必買",
       "price": 688,
       "currency": "NTD",
       "image": "/images/milkyshop.jpg"

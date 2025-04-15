@@ -1,6 +1,6 @@
 function Navbar() {
     return (
-      <nav className="flex justify-center items-center px-5 py-3 bg-[#DDE3EA] shadow-md">
+      <nav className="flex justify-center items-center px-5 py-3 bg-[#DDE3EA]">
         {/* Center Section: Navigation Links */}
         <ul className="flex space-x-17 text-[#394E5F] font-bold">
           <li className="cursor-pointer hover:text-black">人氣推薦</li>

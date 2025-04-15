@@ -5,10 +5,14 @@ import Footer from '../components/Footer';
 
 function Home() {
   return (
-    <div className="w-full h-full min-h-screen flex flex-col">
-      <Header />
+    <div className="wflex flex-col min-h-screen">
+      <Header 
+        title ="WA&WA"
+      />
       <Navbar />
-      <ProductList />
+      <div className="flex-grow">
+        <ProductList />
+      </div>
       <Footer />
     </div>
   );
