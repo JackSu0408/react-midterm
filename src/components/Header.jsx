@@ -1,13 +1,27 @@
+import { ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
+
 function Header() {
    return (
-      <header className="text-center flex flex-col items-center header bg-[#DDE3EA]" >
-         <h2 className="text-black pt-5 pb-2 font-playfair text-3xl ">
-            WA&WA
-         </h2>
-         <div className="flex mt-6 justify-center">
-            <hr className="my-[25px] mx-auto w-[100px] border-0 border-t-[6px] border-[#6366F2] opacity-100 rounded" />
-         </div>
-      </header>
+      <header className="flex justify-between items-center px-2 py-2 bg-[#DDE3EA]">
+      {/* Logo */}
+      <div className="flex items-center">
+         <img
+            src="/images/logo.png"
+            alt="WA&WA Logo"
+            className="h-10 w-auto pb-2"
+         />
+      </div>
+
+      {/* Title */}
+      <h2 className="text-black font-playfair text-3xl">
+         WA&WA
+      </h2>
+
+      <div className="flex items-center space-x-4">
+         <ShoppingCartOutlined className="text-2xl cursor-pointer" />
+         <UserOutlined className="text-2xl cursor-pointer" />
+      </div>
+   </header>  
    );
 }
 
