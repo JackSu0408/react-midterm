@@ -5,7 +5,27 @@
       "category": "日韓必買",
       "price": 688,
       "currency": "NTD",
-      "image": "/images/press_butter_sand.jpg"
+      "image": "/images/press_butter_sand.jpg",
+      "total_rating": 5.0,
+      "ratingCount": 100,
+      "stock":"50",
+      "origin":"日本",
+      "exp":"28天",
+      "method":"冷藏",
+      "ship":"宅配 / 自取(需提前3日預訂)",          
+      "reviews": [
+        {
+          "user": "小穎(台中)",
+          "comment": "第一次吃到 PRESS BUTTER SAND 的焦糖奶油餅真的有驚艷到！外層是酥脆的奶油餅乾，內餡是鹹甜平衡剛剛好的焦糖奶油，完全不膩口，焦糖帶點微苦更添層次。每一口都像在吃高級甜點！",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "Andy(台北)",
+          "comment": "口感很特別，值得一試！",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description":"日本人氣伴手禮，外酥內軟的奶油餅，搭配香濃的奶油餡，口感絕佳。"
     },
     {
       "id": 2,
@@ -13,7 +33,27 @@
       "category": "日韓必買",
       "price": 519,
       "currency": "NTD",
-      "image": "/images/royce_chocolate.jpg"
+      "image": "/images/royce_chocolate.jpg",
+      "total_rating": 4.9,
+      "ratingCount": 85,
+      "stock": "40",
+      "origin": "日本",
+      "exp": "30天",
+      "method": "冷藏",
+      "ship": "宅配 / 自取(需提前3日預訂)",
+      "reviews": [
+        {
+          "user": "小綠(高雄)",
+          "comment": "ROYCE 的生巧克力口感綿密、入口即化，帶有濃郁可可香氣，是回購率超高的必買品！",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "Kelly(台北)",
+          "comment": "很滑順好吃，但稍微偏甜，搭配無糖茶剛剛好。",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "來自北海道的濃郁生巧克力，口感綿密滑順，香氣十足，是巧克力控的最愛。"
     },
     {
       "id": 3,
@@ -21,7 +61,27 @@
       "category": "日韓必買",
       "price": 649,
       "currency": "NTD",
-      "image": "/images/yoku_moku.png"
+      "image": "/images/yoku_moku.png",
+      "total_rating": 4.8,
+      "ratingCount": 90,
+      "stock": "70",
+      "origin": "日本",
+      "exp": "60天",
+      "method": "常溫",
+      "ship": "宅配 / 自取",
+      "reviews": [
+        {
+          "user": "阿文(台南)",
+          "comment": "超級酥脆的雪茄蛋捲，香濃奶香味讓人忍不住一口接一口！",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "Irene(新北)",
+          "comment": "包裝精美，很適合送禮，口味也很細緻。",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "日本經典伴手禮，酥脆雪茄蛋捲包裹香濃奶油，送禮自用兩相宜。"
     },
     {
       "id": 4,
@@ -29,7 +89,27 @@
       "category": "日韓必買",
       "price": 688,
       "currency": "NTD",
-      "image": "/images/milkyshop.jpg"
+      "image": "/images/milkyshop.jpg",
+      "total_rating": 4.7,
+      "ratingCount": 75,
+      "stock": "60",
+      "origin": "韓國",
+      "exp": "45天",
+      "method": "常溫",
+      "ship": "宅配 / 自取",
+      "reviews": [
+        {
+          "user": "小慧(新竹)",
+          "comment": "香濃奶油香氣十足，不會太甜，很涮嘴！",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "Tina(台中)",
+          "comment": "包裝簡約可愛，味道也不錯，會再回購～",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "韓國人氣手工餅乾，奶香濃郁、口感酥脆，是下午茶的絕配點心。"
     },
     {
       "id": 5,
@@ -37,7 +117,27 @@
       "category": "歐美選物",
       "price": 999,
       "currency": "NTD",
-      "image": "/images/usa_chocolate.jpg"
+      "image": "/images/usa_chocolate.jpg",
+      "total_rating": 4.6,
+      "ratingCount": 65,
+      "stock": "45",
+      "origin": "美國",
+      "exp": "90天",
+      "method": "常溫",
+      "ship": "宅配 / 自取",
+      "reviews": [
+        {
+          "user": "阿強(台北)",
+          "comment": "濃郁的黑巧克力，苦甜適中，品質真的很好！",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "Emily(高雄)",
+          "comment": "價格稍高但值得，適合重口味巧克力愛好者。",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "來自美國的頂級黑巧克力，採用優質可可豆，口感濃厚，香氣十足。"
     },
     {
       "id": 6,
@@ -45,8 +145,27 @@
       "category": "歐美選物",
       "price": 499,
       "currency": "NTD",
-      "image": "/images/cookies.jpg"
-
+      "image": "/images/cookies.jpg",
+      "total_rating": 4.5,
+      "ratingCount": 55,
+      "stock": "80",
+      "origin": "英國",
+      "exp": "60天",
+      "method": "常溫",
+      "ship": "宅配 / 自取",
+      "reviews": [
+        {
+          "user": "Sandy(台中)",
+          "comment": "奶油香氣超濃，酥酥的餅乾配上咖啡很讚！",
+          "rating": "★★★★☆"
+        },
+        {
+          "user": "Leo(桃園)",
+          "comment": "小包裝很方便攜帶，口味也很有層次感。",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "英國人氣奶油餅乾，選用天然奶油製作，口感酥鬆，香味撲鼻。"
     },
     {
       "id": 7,
@@ -54,7 +173,27 @@
       "category": "歐美選物",
       "price": 2688,
       "currency": "NTD",
-      "image": "/images/macaron.jpg"
+      "image": "/images/macaron.jpg",
+      "total_rating": 4.9,
+      "ratingCount": 70,
+      "stock": "30",
+      "origin": "法國",
+      "exp": "10天",
+      "method": "冷藏",
+      "ship": "宅配 / 自取(需提前3日預訂)",
+      "reviews": [
+        {
+          "user": "Winnie(新北)",
+          "comment": "外酥內軟，味道超級細緻，像在巴黎吃到的一樣！",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "小光(台南)",
+          "comment": "顏色繽紛、包裝漂亮，送人超有面子。",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "正宗法式馬卡龍，外酥內軟，口味多樣，甜而不膩，是高級甜點的代表作。"
     },
     {
       "id": 8,
@@ -62,7 +201,27 @@
       "category": "歐美選物",
       "price": 679,
       "currency": "NTD",
-      "image": "/images/berlys.png"
+      "image": "/images/berlys.png",
+      "total_rating": 4.7,
+      "ratingCount": 50,
+      "stock": "55",
+      "origin": "馬來西亞",
+      "exp": "120天",
+      "method": "常溫",
+      "ship": "宅配 / 自取",
+      "reviews": [
+        {
+          "user": "阿良(台中)",
+          "comment": "濃郁苦甜的黑巧克力，吃起來非常順口，CP 值很高。",
+          "rating": "★★★★★"
+        },
+        {
+          "user": "Mina(台北)",
+          "comment": "品質不錯，甜度剛剛好，值得推薦！",
+          "rating": "★★★★☆"
+        }
+      ],
+      "description": "馬來西亞知名品牌 Berly’s 出品的黑巧克力，苦甜平衡，適合大人味的你。"
     }
   ]
   

@@ -26,8 +26,8 @@ function ProductDetail({ product }) {
                 <span className="text-gray-500 text-lg">/ 個</span>
               </div>
               <div className="flex items-center mb-6">
-                <span className="text-yellow-500 text-lg mr-2">★ 5.0</span>
-                <span className="text-gray-500">(100 評價)</span>
+                <span className="text-yellow-500 text-lg mr-2">★ {product.total_rating}</span>
+                <span className="text-gray-500">({product.ratingCount} 評價)</span>
               </div>
             </div>
 
@@ -55,11 +55,11 @@ function ProductDetail({ product }) {
         <div className="mt-8">
           <h3 className="text-black text-xl font-bold mb-4">商品資訊</h3>
           <ul className="text-gray-700 space-y-2">
-            <li>商品數量：50</li>
-            <li>產地：台灣</li>
-            <li>保存期限：28天</li>
-            <li>保存方式：冷藏保存於3日內食用最佳</li>
-            <li>出貨方式：宅配 / 自取（需提前3日預訂）</li>
+            <li>商品數量：{product.stock}</li>
+            <li>產地：{product.origin}</li>
+            <li>保存期限：{product.exp}</li>
+            <li>保存方式：{product.method}</li>
+            <li>出貨方式：{product.ship}</li>
           </ul>
         </div>
 
@@ -67,20 +67,13 @@ function ProductDetail({ product }) {
         <div className="mt-8">
           <h3 className="text-black text-xl font-bold mb-4">顧客評價</h3>
           <div className="space-y-6">
-            <div>
-              <p className="text-gray-700 font-medium">小潔（台中）</p>
-              <p className="text-yellow-500">★★★★★</p>
-              <p className="text-gray-600">
-                第一次吃到 PRESS BUTTER SAND 的焦糖奶油餅，真的非常驚艷！外層酥脆，內餡濃郁，完全不膩口，會再回購！
-              </p>
-            </div>
-            <div>
-              <p className="text-gray-700 font-medium">Andy（台北）</p>
-              <p className="text-yellow-500">★★★★☆</p>
-              <p className="text-gray-600">
-                味道非常好，家裡每個人都很喜歡。但包裝上可以再改進，稍微有些不方便。
-              </p>
-            </div>
+            {product.reviews.map((review, index) => (
+              <div key={index}>
+                <p className="text-gray-700 font-medium">{review.user}</p>
+                <p className="text-yellow-500">{review.rating}</p>
+                <p className="text-gray-600">{review.comment}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
