@@ -34,6 +34,7 @@
     {
       "id": 5,
       "name": "美國鷹牌巧克力",
+      "category": "歐美選物",
       "price": 999,
       "currency": "NTD",
       "image": "/images/usa_chocolate.jpg"
@@ -41,6 +42,7 @@
     {
       "id": 6,
       "name": "But we love butter",
+      "category": "歐美選物",
       "price": 499,
       "currency": "NTD",
       "image": "/images/cookies.jpg"
@@ -49,6 +51,7 @@
     {
       "id": 7,
       "name": "La Maison 馬卡龍",
+      "category": "歐美選物",
       "price": 2688,
       "currency": "NTD",
       "image": "/images/macaron.jpg"
@@ -56,6 +59,7 @@
     {
       "id": 8,
       "name": "Berly's黑巧克力",
+      "category": "歐美選物",
       "price": 679,
       "currency": "NTD",
       "image": "/images/berlys.png"
