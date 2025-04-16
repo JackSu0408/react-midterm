@@ -7,14 +7,13 @@ import products from "../json/products.json";
 function Product() {
    const { productId } = useParams();
    const product = products.find(
-      (x) => x.id === productId
+      (x) => x.id === Number(productId)
    );
 
    return (
-      <div className="container mx-auto main-layout bg-gray-900">
+      <div className="container mx-auto main-layout bg-[#DDE3EA]">
          <Header
             title="Product Detail"
-            slogan="An example made by Vite."
          />
          <ProductDetail product={product} className="content" />
          <Footer className="footer" />

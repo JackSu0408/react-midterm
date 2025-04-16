@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+
 function ProductItem({ product }) {
   return (
     <section className="pt-4 px-3 lg:px-4">
