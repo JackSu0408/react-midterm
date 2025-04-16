@@ -18,7 +18,7 @@ function ProductDetail({ product }) {
           <div className="lg:col-span-7 flex flex-col justify-between">
             <div>
               <h2 className="text-gray-500 text-lg mb-2">{product.category}</h2>
-              <h1 className="text-black text-3xl font-bold mb-4">{product.name}</h1>
+              <h1 className="text-black text-3xl font-bold mb-4 flex items-center">{product.name}</h1>
               <div className="flex items-center mb-4">
                 <span className="text-red-500 text-2xl font-bold mr-2">
                   ${product.price}
@@ -26,7 +26,7 @@ function ProductDetail({ product }) {
                 <span className="text-gray-500 text-lg">/ 個</span>
               </div>
               <div className="flex items-center mb-6">
-                <span className="text-yellow-500 text-lg mr-2">★ {product.total_rating}</span>
+                <span className="text-yellow-500 text-lg mr-2">★ {product.total_rating.toFixed(1)}</span>
                 <span className="text-gray-500">({product.ratingCount} 評價)</span>
               </div>
             </div>
@@ -52,7 +52,7 @@ function ProductDetail({ product }) {
         </div>
 
         {/* 商品詳細資訊 */}
-        <div className="mt-8">
+        <div className="mt-8 text-left">
           <h3 className="text-black text-xl font-bold mb-4">商品資訊</h3>
           <ul className="text-gray-700 space-y-2">
             <li>商品數量：{product.stock}</li>
@@ -64,7 +64,7 @@ function ProductDetail({ product }) {
         </div>
 
         {/* 評價區塊 */}
-        <div className="mt-8">
+        <div className="mt-8 text-left">
           <h3 className="text-black text-xl font-bold mb-4">顧客評價</h3>
           <div className="space-y-6">
             {product.reviews.map((review, index) => (
