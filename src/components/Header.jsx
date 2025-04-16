@@ -1,4 +1,6 @@
-import { ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons';
+import { Link } from 'react-router';
+import CartSummary from './CartSummary';
 
 function Header({ title }) {
   return (
@@ -11,11 +13,11 @@ function Header({ title }) {
           className="h-16 w-auto"
         />
         {/* Title */}
-          <h2 className="text-black font-[playfair] text-4xl mt-2">
-            {title}
-          </h2>
+        <Link to="/" className="text-black font-[playfair] text-4xl mt-2">
+          {title}
+        </Link>
         <div className="flex items-center space-x-4">
-          <ShoppingCartOutlined className="text-2xl cursor-pointer" />
+          <CartSummary className="text-2xl cursor-pointer" />
           <UserOutlined className="text-2xl cursor-pointer" />
         </div>
       </div>
