@@ -1,4 +1,5 @@
 import { useParams } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProductDetail from "../components/ProductDetail";
@@ -12,6 +13,9 @@ function Product() {
 
    return (
       <div className="container mx-auto main-layout bg-[#DDE3EA]">
+         <Helmet>
+            <title>product</title>
+         </Helmet>
          <Header
             title="Product Detail"
          />
