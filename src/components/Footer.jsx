@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 function Footer() {
   return (
-    <footer className="w-full bg-[#AAB7BF] py-10 relative">
+    <footer className="w-full bg-[#AAB7BF] py-10 font-[playfair] relative">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
         {/* 左側 Logo 和社交媒體 */}
         <div className="flex flex-col items-center md:items-start">

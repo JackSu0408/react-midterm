@@ -5,11 +5,6 @@ module.exports = {
     ],
     theme: {
       extend: {
-        colors: {
-          MyColor:{
-            'blueGray': '#DDE3EA',
-          },
-        },
         fontFamily: {'playfair':['Playfair Display', 'serif']},
       }
     },
