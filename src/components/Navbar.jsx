@@ -19,7 +19,7 @@ export default function NavBar() {
           className={({ isActive }) =>
             `mx-6 text-black text-base transition-all duration-500 ease-in-out ${
               isActive ? "opacity-100 font-bold" : "opacity-60"
-            } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white`
+            } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white]`
           }
         >
           {label}

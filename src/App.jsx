@@ -3,6 +3,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import Home from './pages/Home'
 import Product from './pages/Product';
+import Category from './pages/Category'; // 新增分類頁面元件
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="products">
-            <Route path="category/:categoryName" element={<Home />} />
+            <Route path="category/:categoryName" element={<Category />} />
             <Route path="id/:productId" element={<Product />} />
           </Route>
         </Routes>
