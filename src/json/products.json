@@ -141,8 +141,8 @@
     },
     {
       "id": 6,
-      "name": "But we love butter",
-      "category": "歐美選物",
+      "name": "But we love butter 奶油餅",
+      "category": "台灣美食",
       "price": 499,
       "currency": "NTD",
       "image": "/images/cookies.jpg",
@@ -197,7 +197,7 @@
     },
     {
       "id": 8,
-      "name": "Berly's黑巧克力",
+      "name": "Berly's 黑巧克力",
       "category": "歐美選物",
       "price": 679,
       "currency": "NTD",
