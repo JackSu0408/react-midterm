@@ -15,7 +15,7 @@ function ProductList({ products = [] }) {
       ))}
 
       {visibleCount < products.length && (
-        <div className="col-span-full text-center mt-6">
+        <div className="w-full col-span-full text-center mt-6">
           <button
             onClick={handleShowMore}
             className="px-6 py-2 text-[#394E5F] border-2 border-[#394E5F] rounded hover:bg-[#394E5F] hover:text-white transition"
