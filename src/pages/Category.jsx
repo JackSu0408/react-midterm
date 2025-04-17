@@ -19,7 +19,7 @@ function Category() {
 
     return (
          <div>
-        <div className="container mx-auto main-layout  min-h-screen">
+        <div className="flex flex-col">
             <Helmet>
                 <title>{title}</title>
             </Helmet>

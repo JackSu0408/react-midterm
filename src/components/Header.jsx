@@ -11,10 +11,10 @@ function Header({ title }) {
           alt="WA&WA Logo"
           className="h-16 w-auto"
         />
-        <Link to="/" className="text-black font-[playfair] text-4xl mt-2">
+        <Link to="/" className="text-black font-[playfair] text-4xl mt-8">
           {title}
         </Link>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 mt-8">
           <CartSummary className="text-2xl cursor-pointer" />
           <UserOutlined className="text-2xl cursor-pointer" />
         </div>

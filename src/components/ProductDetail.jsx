@@ -3,6 +3,12 @@ import AddToCart from "./AddToCart";
 
 function ProductDetail({ product }) {
   const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
+
+  // const [isFavorite, setIsFavorite] = useState(false); // 收藏狀態
+
+  // const toggleFavorite = () => {
+  //   setIsFavorite(!isFavorite); // 切換收藏狀態
+  // };
   return (
     <div className="bg-[#DDE3EA] min-h-screen">
       <div className="max-w-screen-lg mx-auto p-6 bg-white rounded-lg shadow-md">
@@ -20,7 +26,17 @@ function ProductDetail({ product }) {
           <div className="lg:col-span-7 flex flex-col justify-between">
             <div>
               <h2 className="text-gray-500 text-lg mb-2">{product.category}</h2>
-              <h1 className="text-black text-3xl font-bold mb-4 flex items-center">{product.name}</h1>
+              <h1 className="text-black text-3xl font-bold mb-4 flex items-center">{product.name}
+              {/* <button
+                  onClick={toggleFavorite}
+                  className={`ml-60 text-4xl ${
+                    isFavorite ? "text-red-800" : "text-gray-400"
+                  }`}
+                  aria-label="Toggle Favorite"
+                >
+                  {isFavorite ? "♡" : "♡"}
+                </button>               */}
+              </h1>
               <div className="flex items-center mb-4">
                 <span className="text-red-500 text-2xl font-bold mr-2">
                   ${product.price}
