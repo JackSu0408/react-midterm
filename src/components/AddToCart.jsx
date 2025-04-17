@@ -13,7 +13,7 @@ export default function AddToCart({ product, qty }) {
       name: product.name,
       image: product.image,
       price: product.price,
-      countInStock: product.countInStock,
+      stock: product.stock,
       qty,
     }));
     // 2 秒後自動關閉 toast
