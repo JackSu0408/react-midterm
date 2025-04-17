@@ -1,32 +1,31 @@
 import { NavLink } from 'react-router';
 
 export default function NavBar() {
+    const navBarContent = [
+        { to: "/products/category/人氣推薦", label: "人氣推薦" },
+        { to: "/products/category/日韓必買", label: "日韓必買" },
+        { to: "/products/category/台灣美食", label: "台灣美食" },
+        { to: "/products/category/歐美選物", label: "歐美選物" },
+        { to: "/products/category/東南亞特色", label: "東南亞特色" },
+    ];
 
-  const navBarContent = [
-    { to: "/products/category/人氣推薦", label: "人氣推薦" },
-    { to: "/products/category/日韓必買", label: "日韓必買" },
-    { to: "/products/category/台灣美食", label: "台灣美食" },
-    { to: "/products/category/歐美選物", label: "歐美選物" },
-    { to: "/products/category/東南亞特色", label: "東南亞特色" },
-  ];  
-
-  return (
-    <div className="flex flex-wrap justify-center space-x-17 text-[#394E5F] font-bold">
-      {navBarContent.map(({ to, label }) => (
-        <NavLink
-          key={to}
-          to={to}
-          className={({ isActive }) =>
-            `mx-6 text-black text-base transition-all duration-500 ease-in-out ${
-              isActive ? "opacity-100 font-bold" : "opacity-60"
-            } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white]`
-          }
-        >
-          {label}
-        </NavLink>
-      ))}
-    </div>
-  );
+    return (
+        <div className="flex flex-wrap justify-center space-x-17 text-[#394E5F] font-bold">
+            {navBarContent.map(({ to, label }) => (
+                <NavLink
+                    key={to}
+                    to={to}
+                    className={({ isActive }) =>
+                        `mx-6 text-black text-base transition-all duration-500 ease-in-out ${
+                            isActive ? "opacity-100 font-bold" : "opacity-60"
+                        } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white]`
+                    }
+                >
+                    {label}
+                </NavLink>
+            ))}
+        </div>
+    );
 }
 
 // import { NavLink } from 'react-router';

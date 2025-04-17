@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import ProductItem from './ProductItem';
-import Navbar from './Navbar';
 
 function ProductList({ products = [] }) {
   const [visibleCount, setVisibleCount] = useState(4);

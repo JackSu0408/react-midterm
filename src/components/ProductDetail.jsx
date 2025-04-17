@@ -1,6 +1,8 @@
+import { useState } from "react";
 import AddToCart from "./AddToCart";
 
 function ProductDetail({ product }) {
+  const [qty, setQty] = useState(product.stock > 0 ? 1 : 0);
   return (
     <div className="bg-[#DDE3EA] min-h-screen">
       <div className="max-w-screen-lg mx-auto p-6 bg-white rounded-lg shadow-md">
@@ -38,16 +40,18 @@ function ProductDetail({ product }) {
               </label>
               <select
                 id="quantity"
+                defaultValue={Number(product.stock) > 0 ? 1 : 0}
+                onChange={(event) => setQty(Number(event.target.value))}
                 className="border border-gray-300 rounded px-3 py-2"
               >
-                {[...Array(10).keys()].map((num) => (
+                {[...Array(Number(product.stock)).keys()].map((num) => (
                   <option key={num + 1} value={num + 1}>
                     {num + 1}
                   </option>
                 ))}
               </select>
             </div>
-            <AddToCart />
+            <AddToCart product={product} qty={qty} />
           </div>
         </div>
 

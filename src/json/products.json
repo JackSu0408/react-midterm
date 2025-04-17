@@ -223,117 +223,116 @@
     ],
     "description": "馬來西亞知名品牌 Berly’s 出品的黑巧克力，苦甜平衡，適合大人味的你。"
   },
-    {
-      "id": 9,
-      "name": "福砂屋長崎蛋糕",
-      "category": "人氣推薦",
-      "price": 720,
-      "currency": "NTD",
-      "image": "/images/honeycake.png",
-      "total_rating": 5.0,
-      "ratingCount": 88,
-      "stock": "40",
-      "origin": "日本",
-      "exp": "10天",
-      "method": "冷藏",
-      "ship": "宅配 / 自取(需提前3日預訂)",
-      "reviews": [
-        {
-          "user": "May(台中)",
-          "comment": "蛋糕口感濕潤，蜂蜜香氣自然不甜膩，搭配茶剛剛好！",
-          "rating": "★★★★★"
-        },
-        {
-          "user": "阿志(新竹)",
-          "comment": "最愛長崎蛋糕了，質感很好，吃得出食材的講究。",
-          "rating": "★★★★★"
-        }
-      ],
-      "description": "日本傳統蛋糕，精心烘烤、香氣濃郁，口感濕潤細緻，是送禮首選。"
-    },
-    {
-      "id": 10,
-      "name": "白色戀人餅乾",
-      "category": "人氣推薦",
-      "price": 580,
-      "currency": "NTD",
-      "image": "/images/whiteLover.jpg",
-      "total_rating": 5.0,
-      "ratingCount": 110,
-      "stock": "100",
-      "origin": "日本",
-      "exp": "90天",
-      "method": "常溫",
-      "ship": "宅配 / 自取",
-      "reviews": [
-        {
-          "user": "Nana(高雄)",
-          "comment": "經典中的經典！外酥內軟，白巧克力超濃郁！",
-          "rating": "★★★★★"
-        },
-        {
-          "user": "Vic(台北)",
-          "comment": "回憶的味道，每次去北海道都要帶～",
-          "rating": "★★★★★"
-        }
-      ],
-      "description": "北海道經典餅乾，奶油餅乾夾入白巧克力，甜而不膩，是日本伴手禮首選。"
-    },
-    {
-      "id": 11,
-      "name": "BRICKSAND 費南雪",
-      "category": "人氣推薦",
-      "price": 850,
-      "currency": "NTD",
-      "image": "/images/bricksand.png",
-      "total_rating": 4.6,
-      "ratingCount": 60,
-      "stock": "35",
-      "origin": "美國",
-      "exp": "14天",
-      "method": "冷藏",
-      "ship": "宅配 / 自取(需提前3日預訂)",
-      "reviews": [
-        {
-          "user": "Eva(台南)",
-          "comment": "布朗尼香濃濕潤，內餡甜中帶鹹，很有層次感！",
-          "rating": "★★★★★"
-        },
-        {
-          "user": "Ray(桃園)",
-          "comment": "包裝很有質感，味道也不錯，但稍微甜了些。",
-          "rating": "★★★★☆"
-        }
-      ],
-      "description": "美式風格夾心布朗尼，濃郁巧克力與滑順奶油交織，甜點控絕不能錯過。"
-    },
-    {
-      "id": 12,
-      "name": "NY 起司餅",
-      "category": "人氣推薦",
-      "price": 950,
-      "currency": "NTD",
-      "image": "/images/ny.jpg",
-      "total_rating": 4.9,
-      "ratingCount": 92,
-      "stock": "50",
-      "origin": "美國",
-      "exp": "7天",
-      "method": "冷藏",
-      "ship": "宅配 / 自取(需提前3日預訂)",
-      "reviews": [
-        {
-          "user": "Lily(新北)",
-          "comment": "超濃郁起司，入口即化，真的像在日本吃到的一樣！",
-          "rating": "★★★★★"
-        },
-        {
-          "user": "小瑄(嘉義)",
-          "comment": "這款真的好神又不膩，好吃到停不下來～",
-          "rating": "★★★★★"
-        }
-      ],
-      "description": "來自日本的經典伴手禮，濃郁奶香，讓人一試成主顧。"
-    }
-    
+  {
+    "id": 9,
+    "name": "福砂屋長崎蛋糕",
+    "category": "人氣推薦",
+    "price": 720,
+    "currency": "NTD",
+    "image": "/images/honeycake.png",
+    "total_rating": 5.0,
+    "ratingCount": 88,
+    "stock": "40",
+    "origin": "日本",
+    "exp": "10天",
+    "method": "冷藏",
+    "ship": "宅配 / 自取(需提前3日預訂)",
+    "reviews": [
+      {
+        "user": "May(台中)",
+        "comment": "蛋糕口感濕潤，蜂蜜香氣自然不甜膩，搭配茶剛剛好！",
+        "rating": "★★★★★"
+      },
+      {
+        "user": "阿志(新竹)",
+        "comment": "最愛長崎蛋糕了，質感很好，吃得出食材的講究。",
+        "rating": "★★★★★"
+      }
+    ],
+    "description": "日本傳統蛋糕，精心烘烤、香氣濃郁，口感濕潤細緻，是送禮首選。"
+  },
+  {
+    "id": 10,
+    "name": "白色戀人餅乾",
+    "category": "人氣推薦",
+    "price": 580,
+    "currency": "NTD",
+    "image": "/images/whiteLover.jpg",
+    "total_rating": 5.0,
+    "ratingCount": 110,
+    "stock": "100",
+    "origin": "日本",
+    "exp": "90天",
+    "method": "常溫",
+    "ship": "宅配 / 自取",
+    "reviews": [
+      {
+        "user": "Nana(高雄)",
+        "comment": "經典中的經典！外酥內軟，白巧克力超濃郁！",
+        "rating": "★★★★★"
+      },
+      {
+        "user": "Vic(台北)",
+        "comment": "回憶的味道，每次去北海道都要帶～",
+        "rating": "★★★★★"
+      }
+    ],
+    "description": "北海道經典餅乾，奶油餅乾夾入白巧克力，甜而不膩，是日本伴手禮首選。"
+  },
+  {
+    "id": 11,
+    "name": "BRICKSAND 費南雪",
+    "category": "人氣推薦",
+    "price": 850,
+    "currency": "NTD",
+    "image": "/images/bricksand.png",
+    "total_rating": 4.6,
+    "ratingCount": 60,
+    "stock": "35",
+    "origin": "美國",
+    "exp": "14天",
+    "method": "冷藏",
+    "ship": "宅配 / 自取(需提前3日預訂)",
+    "reviews": [
+      {
+        "user": "Eva(台南)",
+        "comment": "布朗尼香濃濕潤，內餡甜中帶鹹，很有層次感！",
+        "rating": "★★★★★"
+      },
+      {
+        "user": "Ray(桃園)",
+        "comment": "包裝很有質感，味道也不錯，但稍微甜了些。",
+        "rating": "★★★★☆"
+      }
+    ],
+    "description": "美式風格夾心布朗尼，濃郁巧克力與滑順奶油交織，甜點控絕不能錯過。"
+  },
+  {
+    "id": 12,
+    "name": "NY 起司餅",
+    "category": "人氣推薦",
+    "price": 950,
+    "currency": "NTD",
+    "image": "/images/ny.jpg",
+    "total_rating": 4.9,
+    "ratingCount": 92,
+    "stock": "50",
+    "origin": "美國",
+    "exp": "7天",
+    "method": "冷藏",
+    "ship": "宅配 / 自取(需提前3日預訂)",
+    "reviews": [
+      {
+        "user": "Lily(新北)",
+        "comment": "超濃郁起司，入口即化，真的像在日本吃到的一樣！",
+        "rating": "★★★★★"
+      },
+      {
+        "user": "小瑄(嘉義)",
+        "comment": "這款真的好神又不膩，好吃到停不下來～",
+        "rating": "★★★★★"
+      }
+    ],
+    "description": "來自日本的經典伴手禮，濃郁奶香，讓人一試成主顧。"
+  }
 ]
