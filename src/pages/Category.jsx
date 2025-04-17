@@ -18,6 +18,7 @@ function Category() {
     console.log('matched products:', _products);
 
     return (
+         <div>
         <div className="container mx-auto main-layout  min-h-screen">
             <Helmet>
                 <title>{title}</title>
@@ -28,7 +29,9 @@ function Category() {
             />
             <Navbar />
             <ProductList products={_products} className="content" />
-            <Footer className="footer" />
+            
+        </div>
+        <Footer className="footer" />
         </div>
     );
 }
