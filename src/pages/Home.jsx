@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import products from '../json/products.json';
 
 function Home() {
-  const title = "WA&WA"; 
+  const title = "WA&WA";
 
   return (
     <div className="flex flex-col min-h-screen">
