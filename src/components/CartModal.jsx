@@ -18,8 +18,9 @@ export default function CartModal({ isOpen, toggleModal }) {
       <>
          {/* DaisyUI Modal */}
          {isOpen && (
-            <div className="modal modal-open fixed inset-0 flex items-center justify-center">
-               <div className="modal-box max-w-md bg-white rounded-lg shadow-lg p-6 relative">
+            <div className="modal modal-open fixed inset-0 z-50 flex items-center justify-center">
+                 <div className="absolute inset-0 bg-opacity-60 backdrop-blur-sm"></div>
+                              <div className=" max-w-md bg-white  bg-opacity-50 rounded-lg shadow-lg p-6 relative">
                   <h3 className="font-bold text-[2rem] mb-4 text-left">購物車</h3>
                   {/* Cart Items */}
                   {cartItems.length === 0 ? (
