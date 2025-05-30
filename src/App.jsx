@@ -1,25 +1,22 @@
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { BrowserRouter } from 'react-router'
 import { HelmetProvider } from 'react-helmet-async'
 import { Provider } from "react-redux";
+import { PersistGate } from 'redux-persist/integration/react';
 
 import './App.css';
-import Home from './pages/Home'
-import Product from './pages/Product';
-import Category from './pages/Category'
-import store from './redux/store';
+import { persistor, store } from './redux/store';
+import MainRoutes from './routes/MainRoutes';
+import { feedProducts } from './api/fireStore'; 
+
+// feedProducts(); // Initialize Firestore with products data
 
 function App() {
   return (
     <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}></PersistGate>  
       <HelmetProvider context={{}}>
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="products">
-              <Route path="category/:categoryName" element={<Category />} />
-              <Route path="id/:productId" element={<Product />} />
-            </Route>
-          </Routes>
+          <MainRoutes />
         </BrowserRouter>
       </HelmetProvider>
     </Provider>
