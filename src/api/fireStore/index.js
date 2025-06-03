@@ -4,7 +4,7 @@ import { collection,doc,
   getDocs,
   deleteDoc,} from "firebase/firestore";
 import { db } from "../firebaseConfig";
-// import products from "../../json/products.json";
+import products from "../../json/products.json";
 
 const productsCollection = collection(db, "products");
 
@@ -13,7 +13,7 @@ export const feedProducts = async () => {
    // DELETE ALL EXISTING DOCS
    const querySnapshot = await getDocs(productsCollection);
    querySnapshot.forEach(async (product) => {
-     await deleteDoc(doc(db, "products", productDoc.id));
+     await deleteDoc(doc(db, "products", product.id));
    });
    // ADD NEW DOCS
    products.forEach(async (product) => {
@@ -21,3 +21,30 @@ export const feedProducts = async () => {
      await setDoc(docRef, { ...product, id: docRef.id, category: product.category.toUpperCase() });
    });
  };
+  export const getProductById = async (id) => {
+  const docRef = await doc(db, "products", id);
+  const docSnap = await getDoc(docRef);
+  return docSnap.data();
+};
+
+export const getProductsByCategory = async (category) => {
+  // Create a query against the collection.
+  const q = await query(productsCollection, where("category", "==", category.toUpperCase()));
+  const querySnapshot = await getDocs(q);
+  // Convert query to a json array.
+  let result = [];
+  querySnapshot.forEach(async (product) => {
+     await result.push(product.data());
+  });
+  return result;
+};
+
+export const getProducts = async () => {
+  const querySnapshot = await getDocs(productsCollection);
+  // Convert query to a json array.
+  let result = [];
+  querySnapshot.forEach(async (product) => {
+     await result.push(product.data());
+  });
+  return result;
+};

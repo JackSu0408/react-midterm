@@ -6,14 +6,14 @@ import { PersistGate } from 'redux-persist/integration/react';
 import './App.css';
 import { persistor, store } from './redux/store';
 import MainRoutes from './routes/MainRoutes';
-import { feedProducts } from './api/fireStore'; 
+import { feedProducts } from './api/fireStore';
 
-// feedProducts(); // Initialize Firestore with products data
+feedProducts(); // Initialize Firestore with products data
 
 function App() {
   return (
     <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}></PersistGate>  
+      <PersistGate loading={null} persistor={persistor}></PersistGate>
       <HelmetProvider context={{}}>
         <BrowserRouter>
           <MainRoutes />
