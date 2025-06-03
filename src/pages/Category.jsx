@@ -18,22 +18,21 @@ function Category() {
     console.log('matched products:', _products);
 
     return (
-         <div>
-        <div className="container mx-auto main-layout  min-h-screen">
-            <Helmet>
-                <title>{title}</title>
-            </Helmet>
-            <Header
-                title={title}
-                slogan="The best place to buy your favorite products"
-            />
-            <Navbar />
-            <ProductList products={_products} className="content" />
-            
-        </div>
-        <Footer className="footer" />
+        <div>
+            <div className="container mx-auto main-layout  min-h-screen">
+                <Helmet>
+                    <title>{title}</title>
+                </Helmet>
+                <Header
+                    title={title}
+                />
+                <Navbar />
+                <ProductList products={_products} className="content" />
+
+            </div>
+            <Footer className="footer" />
         </div>
     );
 }
 
-            export default Category;
+export default Category;
