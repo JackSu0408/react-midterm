@@ -16,7 +16,7 @@ export default function NavBar() {
 
   // 這段是共用的導覽列內容
   const NavBarContent = ({ onClick }) => (
-    <div className="w-full flex flex-col md:flex-row md:justify-center md:space-x-12 text-[#394E5F] font-bold">
+    <div className="flex flex-col md:flex-row md:justify-center md:space-x-12 text-[#394E5F] font-bold">
       {navBarContent.map(({ to, label }) => (
         <NavLink
           key={to}

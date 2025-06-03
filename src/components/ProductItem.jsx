@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 function ProductItem({ product }) {
   return (
     <section className="pt-4 px-3 lg:px-4 flex justify-center">
-      <div className="w-64 border border-gray-300 rounded-lg overflow-hidden bg-white shadow-md flex flex-col">
+      <div className="w-64 border border-gray-300 rounded-lg overflow-hidden bg-white flex flex-col">
         <Link to={`/products/id/${product.id}`}>
           <img className="w-full h-40 object-cover" src={product.image} alt={product.name} />
         </Link>

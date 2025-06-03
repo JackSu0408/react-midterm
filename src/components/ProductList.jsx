@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ProductItem from './ProductItem';
 
 function ProductList({ products = [] }) {
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   const handleShowMore = () => {
     setVisibleCount((prevCount) => prevCount + 4);
