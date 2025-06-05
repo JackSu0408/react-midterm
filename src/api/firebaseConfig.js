@@ -22,6 +22,7 @@ const app = app_length ? getApp() : initializeApp(firebaseConfig);
 
 // 拿到資料庫與登入功能
 const db = getFirestore(app);
+
 const auth = getAuth(app);
 
 // 匯出給其他地方用

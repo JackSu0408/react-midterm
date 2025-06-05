@@ -1,6 +1,7 @@
-import { UserOutlined } from '@ant-design/icons';
-import { Link } from 'react-router';
+// import { useState } from "react"
+import { Link } from 'react-router-dom';
 import CartSummary from './CartSummary';
+import UserInfo from './UserInfo';
 
 function Header({ title }) {
   return (
@@ -16,7 +17,7 @@ function Header({ title }) {
         </Link>
         <div className="flex items-center space-x-4 mt-8">
           <CartSummary className="text-2xl cursor-pointer" />
-          <UserOutlined className="text-2xl cursor-pointer" />
+          <UserInfo /> 
         </div>
       </div>
     </header>

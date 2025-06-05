@@ -7,19 +7,25 @@ import './App.css';
 import { persistor, store } from './redux/store';
 import MainRoutes from './routes/MainRoutes';
 import { feedProducts } from './api/fireStore';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-feedProducts(); // Initialize Firestore with products data
+const queryClient = new QueryClient();
+
+// feedProducts(); // Initialize Firestore with products data
 
 function App() {
   return (
+    <QueryClientProvider client={queryClient}>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}></PersistGate>
-      <HelmetProvider context={{}}>
-        <BrowserRouter>
-          <MainRoutes />
-        </BrowserRouter>
-      </HelmetProvider>
+      <PersistGate loading={null} persistor={persistor}>
+        <HelmetProvider context={{}}>
+          <BrowserRouter>
+            <MainRoutes />
+          </BrowserRouter>
+        </HelmetProvider>
+      </PersistGate>
     </Provider>
+    </QueryClientProvider>
   );
 }
 
