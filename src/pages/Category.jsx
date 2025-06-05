@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
 import ProductList from '../components/ProductList';
 import products from '../json/products.json';
+import { motion, AnimatePresence } from "framer-motion"; // 新增
 
 function Category() {
     const { categoryName } = useParams();
@@ -19,16 +20,23 @@ function Category() {
 
     return (
         <div>
-            <div className="container mx-auto main-layout  min-h-screen">
+            <div className="container mx-auto main-layout min-h-screen">
                 <Helmet>
                     <title>{title}</title>
                 </Helmet>
-                <Header
-                    title={title}
-                />
+                <Header title={title} />
                 <Navbar />
-                <ProductList products={_products} className="content" />
-
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={categoryName}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -30 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    <ProductList products={_products} className="content" />
+                  </motion.div>
+                </AnimatePresence>
             </div>
             <Footer className="footer" />
         </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion"; // 新增
 import AddToCart from "./AddToCart";
 
 // 星星評分元件（小尺寸，無黑框）
@@ -100,7 +101,13 @@ function ProductDetail({ product }) {
   }
 
   return (
-    <div className="bg-[#DDE3EA] min-h-screen">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 0.5 }}
+      className="bg-[#DDE3EA] min-h-screen"
+    >
       <div className="max-w-screen-lg mx-auto p-6 bg-white rounded-lg">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* 左側：產品圖片 */}
@@ -234,7 +241,7 @@ function ProductDetail({ product }) {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

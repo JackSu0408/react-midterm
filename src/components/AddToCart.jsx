@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addCartItems } from "../redux/cartSlice";
+import { motion, AnimatePresence } from "framer-motion"; // 新增
 
 export default function AddToCart({ product, qty }) {
   const dispatch = useDispatch();
@@ -30,18 +31,25 @@ export default function AddToCart({ product, qty }) {
       >
         <span className="font-thin ml-3">加入購物車</span>
       </button>
-      {showToast && (
-        <div
-          className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 z-50"
-          style={{ minWidth: "250px" }}
-        >
-          <div className="alert">
-            <span>
-              {qty}件 {product.name} 已加入您的購物車！
-            </span>
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {showToast && (
+          <motion.div
+            key="toast"
+            initial={{ opacity: 0, scale: 1, y: 40 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.5, y: 40 }}
+            transition={{ duration: 0.3 }}
+            className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 z-50"
+            style={{ minWidth: "250px" }}
+          >
+            <div className="alert">
+              <span>
+                {qty}件 {product.name} 已加入您的購物車！
+              </span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
