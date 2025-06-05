@@ -191,7 +191,7 @@ function ProductDetail({ product }) {
                   <div>{renderStars(review.rating)}</div>
                   <p className="text-gray-600">{review.comment}</p>
                 </div>
-                <button
+                {/* <button
                   className="ml-4 text-red-500 hover:text-red-700 text-xs"
                   onClick={() => {
                     const newReviews = reviews.filter((_, i) => i !== index);
@@ -200,7 +200,7 @@ function ProductDetail({ product }) {
                   title="刪除這則評論"
                 >
                   刪除
-                </button>
+                </button> */}
               </div>
             ))}
           </div>
