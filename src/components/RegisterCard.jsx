@@ -35,7 +35,6 @@ const RegisterCard = ({ redirect }) => {
     }
     mutate({ ...formData, redirect });
   };
-
   return (
     <AuthFormLayout onSubmit={onFinish}>
       <FormInput

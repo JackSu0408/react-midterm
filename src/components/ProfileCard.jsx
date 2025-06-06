@@ -1,28 +1,89 @@
-import { useQuery } from '@tanstack/react-query';
+import { useUserInfo, useLogout, useUpdateProfile } from '../react-query';
+import { useState, useEffect } from 'react';
+import { Home, Phone, User } from "lucide-react";
+import { FormInput, FormError, AuthFormLayout } from "./Common";
 
 const ProfileCard = () => {
-   const { data: userInfo } = useQuery({
-      queryKey: ['userInfo'],
-      enabled: false, // 只讀快取，不自動執行 queryFn
+   const { data: userInfo } = useUserInfo();
+   const logout = useLogout();
+   const updateProfile = useUpdateProfile();
+   const [formData, setFormData] = useState({
+      username: userInfo?.username || '',
+      adrs: userInfo?.adrs || '',
+      tel: userInfo?.tel || '',
    });
 
+   const handleLogout = () => {
+      logout.mutate();
+   }
+
+   const onChange = (e) => {
+      const { name, type, checked, value } = e.target;
+      setFormData((prev) => ({
+        ...prev,
+        [name]: type === "checkbox" ? checked : value,
+      }));
+    };
+
+   const handleFinish = (e) => {
+      e.preventDefault();
+      updateProfile.mutate({
+         ...formData,
+         uid: userInfo?.uid,
+      });
+   }
+
+   useEffect(() => {
+      setFormData({
+         username: userInfo?.username || '',
+         adrs: userInfo?.adrs || '',
+         tel: userInfo?.tel || '',
+      });
+   }
+   , [userInfo]);
+
    return (
-      <div className="p-6 max-w-sm mx-auto">
-         <h2 className="text-2xl font-bold mb-4">Profile Card</h2>
-         <p className="opacity-80 mb-4">This is a simple profile card component.</p>
-         <p className="opacity-80 mb-4">
-            <strong>Name:</strong> {userInfo?.displayName || 'N/A'}
-         </p>
-         <p className="opacity-80 mb-4">
-            <strong>Email:</strong> {userInfo?.email || 'N/A'}
-         </p>
-         <p className="opacity-80 mb-4">
-            <strong>UID:</strong> {userInfo?.uid || 'N/A'}
-         </p>
-         <button className="bg-blue-500 text-white px-4 py-2 w-[100%] rounded hover:bg-blue-600 transition duration-200">
-            Edit Profile
+      <AuthFormLayout onSubmit={handleFinish}>
+         <FormInput
+            label="Your Name"
+            name="username"
+            type="text"
+            placeholder="e.g., John Doe"
+            icon={User}
+            value={formData.username}
+            onChange={onChange}
+         />
+         <FormInput
+            label="Your Address"
+            name="adrs"
+            type="text"
+            placeholder="e.g., No.128, He-Ping E. Rd., Sec. 2, Taipei City"
+            icon={Home}
+            value={formData.adrs}
+            onChange={onChange}
+         />
+         <FormInput
+            label="Your Phone Number"
+            name="tel"
+            type="text"
+            placeholder="e.g., (02)2732-1104"
+            icon={Phone}
+            value={formData.tel}
+            onChange={onChange}
+         />                  
+         <button
+            className="mt-[4rem] opacity-60 px-4 py-2 w-[100%] border border-gray-500 rounded hover:opacity-100 transition duration-200"
+            type="submit"
+         >
+            Update Profile
          </button>
-      </div>
+         <button
+            className="bg-blue-500 text-white px-4 py-2 w-[100%] rounded hover:bg-blue-600 transition duration-200"
+            onClick={handleLogout}
+         >
+            Logout
+         </button>
+      </AuthFormLayout>
    );
 }
 export default ProfileCard;

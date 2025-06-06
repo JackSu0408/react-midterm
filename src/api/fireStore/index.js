@@ -7,8 +7,9 @@ import {
   deleteDoc,
 query,
 where,
+updateDoc,
 } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import { auth,db } from "../firebaseConfig";
 import products from "../../json/products.json";
 
 // REFERENCE COLLECTION

@@ -1,5 +1,5 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import {
   getProductById,
   getProducts,
@@ -66,10 +66,12 @@ export const useRegisterWithEmailPassword = () => {
 
 export const useUpdateProfile = () => {
   const queryClient = useQueryClient();
+  const navigate = useNavigate();
   return useMutation({
     mutationFn: updateUserInfo,
     onSuccess: () => {
       queryClient.invalidateQueries(["userInfo"]);
+      navigate("/"); // 更新成功後導回首頁
     },
   });
 };
